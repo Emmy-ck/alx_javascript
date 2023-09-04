@@ -2,8 +2,10 @@
 
 // A script with a function that executes x times a function
 
-function callMeMoby() {
-    console.log('C is fun');
+function callMeMoby(x, theFunction) {
+    for (let i = 0; i < x; i++) {
+        theFunction();
+    }
 }
 
 module.exports.callMeMoby = callMeMoby;
