@@ -6,8 +6,8 @@ class Rectangle {
     // Constructor taking 2 arguments
     constructor(w, h) {
         // Initializing instance attributes width and height
-        this.width: w;
-        this.height: h;
+        this.width = w;
+        this.height = h;
     }
 }
 
