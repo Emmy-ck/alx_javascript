@@ -51,4 +51,4 @@ class Square extends Rectangle {
 
 // Exporting this class to be imported and used in other files.
 
-module.exports = Rectangle;
+module.exports = Square;
