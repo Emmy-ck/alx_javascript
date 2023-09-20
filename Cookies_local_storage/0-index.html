@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>0-index</title>
 </head>
 <body>
     <div>
@@ -22,8 +22,13 @@
             const firstName = firstNameInput.value;
             const email = emailInput.value;
 
-            document.cookie = `firstname=${firstName}`;
-            document.cookie = `email=${email}`;
+            const expirationDate = new Date();
+            expirationDate.setDate(expirationDate.getDate() + 10);
+
+            const expires = expirationDate.toUTCString();
+
+            document.cookie = `firstname=${firstName}; expires=${expires}`;
+            document.cookie = `email=${email}; expires=${expires}`;
         }
 
         function showCookies() {
