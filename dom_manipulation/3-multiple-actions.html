@@ -8,13 +8,13 @@
         <button id="'toggleButton">Toggle Paragraph</button>
 
         <script>
-            var container = document.getElementById("container");
-            var toggleButton = document.getElementById("toggleButton");
+            const container = document.getElementById("container");
+            const toggleButton = document.getElementById("toggleButton");
 
-            var newParagraph = document.createElement("p");
+            const newParagraph = document.createElement("p");
             newParagraph.textContent = "New paragraph";
 
-            var isParagraphVisible = true;
+            let isParagraphVisible = true;
             toggleButton.addEventListener("click", function () {
                 if (isParagraphVisible) {
                     container.removeChild(newParagraph);
